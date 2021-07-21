@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarregarImagem));
             this.btnAbrir = new System.Windows.Forms.Button();
             this.textName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -82,6 +83,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textName);
             this.Controls.Add(this.btnAbrir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CarregarImagem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carregar Imagem";

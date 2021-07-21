@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adição));
             this.Result = new System.Windows.Forms.TextBox();
             this.btnSomar = new System.Windows.Forms.Button();
             this.text2 = new System.Windows.Forms.TextBox();
@@ -84,6 +85,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.btnSomar);
             this.Controls.Add(this.text2);
             this.Controls.Add(this.text1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Adição";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adição";

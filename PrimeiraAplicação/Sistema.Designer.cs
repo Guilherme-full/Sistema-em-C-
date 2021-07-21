@@ -53,6 +53,7 @@ namespace PrimeiraAplicação
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textoSoftware);
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Sistema";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema";

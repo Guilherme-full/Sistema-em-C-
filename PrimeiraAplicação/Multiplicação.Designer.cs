@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Multiplicação));
             this.Result = new System.Windows.Forms.TextBox();
             this.Mult = new System.Windows.Forms.Button();
             this.text2 = new System.Windows.Forms.TextBox();
@@ -92,6 +93,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.text2);
             this.Controls.Add(this.text1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Multiplicação";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Multiplicação";
