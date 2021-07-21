@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Subtração));
             this.text = new System.Windows.Forms.TextBox();
             this.text2 = new System.Windows.Forms.TextBox();
             this.btnSubtrair = new System.Windows.Forms.Button();
@@ -84,6 +85,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.btnSubtrair);
             this.Controls.Add(this.text2);
             this.Controls.Add(this.text);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Subtração";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Subtração";

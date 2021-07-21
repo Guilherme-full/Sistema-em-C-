@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculadora));
             this.btnAdição = new System.Windows.Forms.Button();
             this.btnSubtração = new System.Windows.Forms.Button();
             this.btnMulti = new System.Windows.Forms.Button();
@@ -39,9 +40,9 @@ namespace PrimeiraAplicação
             // 
             this.btnAdição.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdição.ForeColor = System.Drawing.Color.Red;
-            this.btnAdição.Location = new System.Drawing.Point(92, 166);
+            this.btnAdição.Location = new System.Drawing.Point(36, 166);
             this.btnAdição.Name = "btnAdição";
-            this.btnAdição.Size = new System.Drawing.Size(104, 40);
+            this.btnAdição.Size = new System.Drawing.Size(147, 40);
             this.btnAdição.TabIndex = 0;
             this.btnAdição.Text = "Adição";
             this.btnAdição.UseVisualStyleBackColor = true;
@@ -51,9 +52,9 @@ namespace PrimeiraAplicação
             // 
             this.btnSubtração.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubtração.ForeColor = System.Drawing.Color.Red;
-            this.btnSubtração.Location = new System.Drawing.Point(265, 166);
+            this.btnSubtração.Location = new System.Drawing.Point(218, 166);
             this.btnSubtração.Name = "btnSubtração";
-            this.btnSubtração.Size = new System.Drawing.Size(93, 40);
+            this.btnSubtração.Size = new System.Drawing.Size(137, 40);
             this.btnSubtração.TabIndex = 1;
             this.btnSubtração.Text = "Subtração";
             this.btnSubtração.UseVisualStyleBackColor = true;
@@ -63,9 +64,9 @@ namespace PrimeiraAplicação
             // 
             this.btnMulti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMulti.ForeColor = System.Drawing.Color.Red;
-            this.btnMulti.Location = new System.Drawing.Point(421, 166);
+            this.btnMulti.Location = new System.Drawing.Point(397, 166);
             this.btnMulti.Name = "btnMulti";
-            this.btnMulti.Size = new System.Drawing.Size(114, 40);
+            this.btnMulti.Size = new System.Drawing.Size(153, 40);
             this.btnMulti.TabIndex = 2;
             this.btnMulti.Text = "Multiplicação";
             this.btnMulti.UseVisualStyleBackColor = true;
@@ -75,9 +76,9 @@ namespace PrimeiraAplicação
             // 
             this.BtnDivisão.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDivisão.ForeColor = System.Drawing.Color.Red;
-            this.BtnDivisão.Location = new System.Drawing.Point(594, 166);
+            this.BtnDivisão.Location = new System.Drawing.Point(598, 166);
             this.BtnDivisão.Name = "BtnDivisão";
-            this.BtnDivisão.Size = new System.Drawing.Size(100, 40);
+            this.BtnDivisão.Size = new System.Drawing.Size(151, 40);
             this.BtnDivisão.TabIndex = 3;
             this.BtnDivisão.Text = "Divisão";
             this.BtnDivisão.UseVisualStyleBackColor = true;
@@ -93,6 +94,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.btnMulti);
             this.Controls.Add(this.btnSubtração);
             this.Controls.Add(this.btnAdição);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calculadora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";

@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnCarregar = new System.Windows.Forms.Button();
             this.Gerador = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -110,7 +111,7 @@ namespace PrimeiraAplicação
             this.btnBancoDeDados.ForeColor = System.Drawing.Color.Red;
             this.btnBancoDeDados.Location = new System.Drawing.Point(284, 318);
             this.btnBancoDeDados.Name = "btnBancoDeDados";
-            this.btnBancoDeDados.Size = new System.Drawing.Size(195, 51);
+            this.btnBancoDeDados.Size = new System.Drawing.Size(195, 58);
             this.btnBancoDeDados.TabIndex = 5;
             this.btnBancoDeDados.Text = "Banco de Dados";
             this.btnBancoDeDados.UseVisualStyleBackColor = false;
@@ -140,6 +141,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.btnCarregar);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Inicial_Banco_de_Dados));
             this.btnCadastarInform = new System.Windows.Forms.Button();
             this.btnAtualizaInfo = new System.Windows.Forms.Button();
             this.ExcluirInfo = new System.Windows.Forms.Button();
@@ -93,6 +94,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.ExcluirInfo);
             this.Controls.Add(this.btnAtualizaInfo);
             this.Controls.Add(this.btnCadastarInform);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tela_Inicial_Banco_de_Dados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Inicial_Banco_de_Dados";

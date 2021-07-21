@@ -29,6 +29,7 @@ namespace PrimeiraAplicação
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Excluir_Informações));
             this.label1 = new System.Windows.Forms.Label();
             this.textExcluir = new System.Windows.Forms.TextBox();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -75,6 +76,7 @@ namespace PrimeiraAplicação
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.textExcluir);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Excluir_Informações";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Excluir_Informações";
