@@ -43,7 +43,7 @@ namespace PrimeiraAplicação
         {
             try
             {
-                conexao = new MySqlConnection("Server=localhost;Database=cad_cliente;Uid=root;Pwd=xavier2004");
+                conexao = new MySqlConnection("Server=192.168.15.5;Database=cad_cliente;Uid=xavier;Pwd=xavier123");
                 strSQL = "delete from cliente where id = @id";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@id", textExcluir.Text);
