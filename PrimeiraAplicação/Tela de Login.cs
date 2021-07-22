@@ -48,6 +48,11 @@ namespace PrimeiraAplicação
 
         private void Tela_de_Login_FormClosed(object sender, FormClosedEventArgs e)
         {
+           
+        }
+
+        private void btnVoltarL_Click(object sender, EventArgs e)
+        {
             
         }
     }
