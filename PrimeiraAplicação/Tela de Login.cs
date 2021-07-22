@@ -48,7 +48,21 @@ namespace PrimeiraAplicação
 
         private void Tela_de_Login_FormClosed(object sender, FormClosedEventArgs e)
         {
-           
+            if(Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                foreach(Form formularioAberto in Application.OpenForms)
+                {
+                    if(formularioAberto is Tela_Principal)
+                    {
+                        formularioAberto.Show();
+                        break;
+                    }
+                }
+            }
         }
 
         private void btnVoltarL_Click(object sender, EventArgs e)
