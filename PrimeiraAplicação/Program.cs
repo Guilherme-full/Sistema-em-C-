@@ -16,7 +16,7 @@ namespace PrimeiraAplicação
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tela_de_Login());
+            Application.Run(new Tela_Principal());
         }
     }
 }

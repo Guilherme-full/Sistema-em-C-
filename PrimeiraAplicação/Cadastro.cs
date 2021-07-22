@@ -54,6 +54,21 @@ namespace PrimeiraAplicação
 
         private void Cadastro_FormClosed(object sender, FormClosedEventArgs e)
         {
+            if(Application.OpenForms.Count == 0)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                foreach(Form formularioAberto in Application.OpenForms)
+                {
+                    if(formularioAberto is Tela_Principal)
+                    {
+                        formularioAberto.Show();
+                        break;
+                    }
+                }
+            }
         }
     }
 }
