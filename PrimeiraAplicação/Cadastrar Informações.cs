@@ -73,5 +73,9 @@ namespace PrimeiraAplicação
 
         }
 
+        private void Cadastrar_Informações_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -107,6 +107,12 @@
     <Compile Include="Subtração.Designer.cs">
       <DependentUpon>Subtração.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tela de Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tela de Login.Designer.cs">
+      <DependentUpon>Tela de Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tela Inicial Banco de Dados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Subtração.resx">
       <DependentUpon>Subtração.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tela de Login.resx">
+      <DependentUpon>Tela de Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tela Inicial Banco de Dados.resx">
       <DependentUpon>Tela Inicial Banco de Dados.cs</DependentUpon>

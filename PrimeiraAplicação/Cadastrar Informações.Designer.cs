@@ -103,6 +103,7 @@ namespace PrimeiraAplicação
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastrar_Informações";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Cadastrar_Informações_FormClosed);
+            this.Load += new System.EventHandler(this.Cadastrar_Informações_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
