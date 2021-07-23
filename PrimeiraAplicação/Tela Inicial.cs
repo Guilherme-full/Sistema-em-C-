@@ -19,16 +19,12 @@ namespace PrimeiraAplicação
 
         private void btnCarregar_Click(object sender, EventArgs e)
         {
-            CarregarImagem image = new CarregarImagem();
-            image.Show();
-            this.Hide();
+           
         }
         
         private void Gerador_Click(object sender, EventArgs e)
         {
-            Gerador_de_Número gera = new Gerador_de_Número();
-            gera.Show();
-            this.Hide();
+            
         }
 
         private void SairAplicação_Click(object sender, EventArgs e)
@@ -52,9 +48,7 @@ namespace PrimeiraAplicação
 
         private void btnCalculadora_Click(object sender, EventArgs e)
         {
-            Calculadora calc = new Calculadora();
-            calc.Show();
-            this.Hide();
+            
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -78,7 +72,7 @@ namespace PrimeiraAplicação
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            pnlBancoDeDados.Location = new Point(this.Width / 2 - 258, this.Height / 2 - 179);
         }
     }
 }

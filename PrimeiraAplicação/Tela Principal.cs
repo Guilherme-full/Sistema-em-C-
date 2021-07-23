@@ -30,5 +30,15 @@ namespace PrimeiraAplicação
             cadas.Show();
             this.Hide();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Tela_Principal_Load(object sender, EventArgs e)
+        {
+            pnLogin.Location = new Point(this.Width / 2 - 275, this.Height / 2 - 151);
+        }
     }
 }

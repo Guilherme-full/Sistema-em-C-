@@ -63,5 +63,10 @@ namespace PrimeiraAplicação
                 comando = null;
             }
         }
+
+        private void Exibir_Informações_Load(object sender, EventArgs e)
+        {
+            pnlExibirInfo.Location = new Point(this.Width / 2 - 429, this.Height / 2 - 265);
+        }
     }
 }

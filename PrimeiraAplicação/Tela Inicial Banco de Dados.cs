@@ -63,5 +63,10 @@ namespace PrimeiraAplicação
             exi.Show();
             this.Hide();
         }
+
+        private void Tela_Inicial_Banco_de_Dados_Load(object sender, EventArgs e)
+        {
+            pnlTelaInicialBanco.Location = new Point(this.Width / 2 - 412, this.Height / 2 - 133);
+        }
     }
 }
