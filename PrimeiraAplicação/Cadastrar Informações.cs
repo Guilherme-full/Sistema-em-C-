@@ -75,7 +75,7 @@ namespace PrimeiraAplicação
 
         private void Cadastrar_Informações_Load(object sender, EventArgs e)
         {
-
+            pnlCadastrarInfo.Location = new Point(this.Width / 2 - 351, this.Height / 2 - 160);
         }
     }
 }

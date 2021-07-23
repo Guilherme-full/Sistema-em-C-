@@ -68,5 +68,10 @@ namespace PrimeiraAplicação
 
             }
         }
+
+        private void Atualizar_Informações_Load(object sender, EventArgs e)
+        {
+            pnlAtualizarInfo.Location = new Point(this.Width / 2 - 289, this.Height / 2 - 180);
+        }
     }
 }

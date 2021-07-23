@@ -62,5 +62,10 @@ namespace PrimeiraAplicação
                 comando = null;
             }
         }
+
+        private void Excluir_Informações_Load(object sender, EventArgs e)
+        {
+            pnlExcluirInfo.Location =  new Point(this.Width / 2 - 299, this.Height / 2 - 125);
+        }
     }
 }

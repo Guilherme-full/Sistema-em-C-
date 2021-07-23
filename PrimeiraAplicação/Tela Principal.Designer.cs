@@ -30,31 +30,21 @@ namespace PrimeiraAplicação
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_Principal));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrParaOlogin = new System.Windows.Forms.Button();
             this.btnIrParaOCadastro = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnLogin = new System.Windows.Forms.Panel();
+            this.pnLogin.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 451);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnIrParaOlogin
             // 
             this.btnIrParaOlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnIrParaOlogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIrParaOlogin.ForeColor = System.Drawing.Color.White;
-            this.btnIrParaOlogin.Location = new System.Drawing.Point(452, 188);
+            this.btnIrParaOlogin.Location = new System.Drawing.Point(88, 171);
             this.btnIrParaOlogin.Name = "btnIrParaOlogin";
-            this.btnIrParaOlogin.Size = new System.Drawing.Size(99, 39);
+            this.btnIrParaOlogin.Size = new System.Drawing.Size(110, 39);
             this.btnIrParaOlogin.TabIndex = 1;
             this.btnIrParaOlogin.Text = "Login";
             this.btnIrParaOlogin.UseVisualStyleBackColor = false;
@@ -63,9 +53,11 @@ namespace PrimeiraAplicação
             // btnIrParaOCadastro
             // 
             this.btnIrParaOCadastro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnIrParaOCadastro.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnIrParaOCadastro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnIrParaOCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIrParaOCadastro.ForeColor = System.Drawing.Color.White;
-            this.btnIrParaOCadastro.Location = new System.Drawing.Point(194, 188);
+            this.btnIrParaOCadastro.Location = new System.Drawing.Point(347, 171);
             this.btnIrParaOCadastro.Name = "btnIrParaOCadastro";
             this.btnIrParaOCadastro.Size = new System.Drawing.Size(110, 39);
             this.btnIrParaOCadastro.TabIndex = 2;
@@ -79,36 +71,48 @@ namespace PrimeiraAplicação
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(186, 36);
+            this.label1.Location = new System.Drawing.Point(92, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(365, 46);
             this.label1.TabIndex = 3;
             this.label1.Text = "Bem Vindo Úsuario";
             // 
+            // pnLogin
+            // 
+            this.pnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.pnLogin.Controls.Add(this.btnIrParaOlogin);
+            this.pnLogin.Controls.Add(this.btnIrParaOCadastro);
+            this.pnLogin.Controls.Add(this.label1);
+            this.pnLogin.Location = new System.Drawing.Point(107, 12);
+            this.pnLogin.Name = "pnLogin";
+            this.pnLogin.Size = new System.Drawing.Size(550, 301);
+            this.pnLogin.TabIndex = 4;
+            this.pnLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
             // Tela_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnIrParaOCadastro);
-            this.Controls.Add(this.btnIrParaOlogin);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pnLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Tela_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tela_Principal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Tela_Principal_Load);
+            this.pnLogin.ResumeLayout(false);
+            this.pnLogin.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIrParaOlogin;
         private System.Windows.Forms.Button btnIrParaOCadastro;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnLogin;
     }
 }

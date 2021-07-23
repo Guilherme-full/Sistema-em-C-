@@ -35,5 +35,10 @@ namespace PrimeiraAplicação
                 }
             }
         }
+
+        private void Sistema_Load(object sender, EventArgs e)
+        {
+            pnlSistema.Location = new Point(this.Width / 2 - 397, this.Height / 2 - 193);
+        }
     }
 }

@@ -37,14 +37,16 @@ namespace PrimeiraAplicação
             this.textNomeAtualizar = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textNumeroAtualizar = new System.Windows.Forms.TextBox();
+            this.pnlAtualizarInfo = new System.Windows.Forms.Panel();
+            this.pnlAtualizarInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(116, 72);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(102, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(23, 18);
             this.label2.TabIndex = 1;
@@ -53,7 +55,7 @@ namespace PrimeiraAplicação
             // textAtualizar
             // 
             this.textAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textAtualizar.Location = new System.Drawing.Point(158, 72);
+            this.textAtualizar.Location = new System.Drawing.Point(144, 57);
             this.textAtualizar.Multiline = true;
             this.textAtualizar.Name = "textAtualizar";
             this.textAtualizar.Size = new System.Drawing.Size(345, 25);
@@ -61,22 +63,23 @@ namespace PrimeiraAplicação
             // 
             // btnAtualizar
             // 
+            this.btnAtualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.ForeColor = System.Drawing.Color.Red;
-            this.btnAtualizar.Location = new System.Drawing.Point(79, 258);
+            this.btnAtualizar.ForeColor = System.Drawing.Color.White;
+            this.btnAtualizar.Location = new System.Drawing.Point(65, 243);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(117, 48);
             this.btnAtualizar.TabIndex = 3;
             this.btnAtualizar.Text = "Atualizar";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.UseVisualStyleBackColor = false;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(89, 115);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(75, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 18);
             this.label1.TabIndex = 4;
@@ -85,7 +88,7 @@ namespace PrimeiraAplicação
             // textNomeAtualizar
             // 
             this.textNomeAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNomeAtualizar.Location = new System.Drawing.Point(158, 116);
+            this.textNomeAtualizar.Location = new System.Drawing.Point(144, 101);
             this.textNomeAtualizar.Multiline = true;
             this.textNomeAtualizar.Name = "textNomeAtualizar";
             this.textNomeAtualizar.Size = new System.Drawing.Size(345, 26);
@@ -95,8 +98,8 @@ namespace PrimeiraAplicação
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(49, 168);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(35, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 18);
             this.label3.TabIndex = 6;
@@ -105,33 +108,45 @@ namespace PrimeiraAplicação
             // textNumeroAtualizar
             // 
             this.textNumeroAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNumeroAtualizar.Location = new System.Drawing.Point(158, 165);
+            this.textNumeroAtualizar.Location = new System.Drawing.Point(144, 150);
             this.textNumeroAtualizar.Multiline = true;
             this.textNumeroAtualizar.Name = "textNumeroAtualizar";
             this.textNumeroAtualizar.Size = new System.Drawing.Size(345, 26);
             this.textNumeroAtualizar.TabIndex = 7;
             // 
+            // pnlAtualizarInfo
+            // 
+            this.pnlAtualizarInfo.BackColor = System.Drawing.Color.Transparent;
+            this.pnlAtualizarInfo.Controls.Add(this.textNumeroAtualizar);
+            this.pnlAtualizarInfo.Controls.Add(this.label3);
+            this.pnlAtualizarInfo.Controls.Add(this.textNomeAtualizar);
+            this.pnlAtualizarInfo.Controls.Add(this.label1);
+            this.pnlAtualizarInfo.Controls.Add(this.btnAtualizar);
+            this.pnlAtualizarInfo.Controls.Add(this.textAtualizar);
+            this.pnlAtualizarInfo.Controls.Add(this.label2);
+            this.pnlAtualizarInfo.Location = new System.Drawing.Point(127, 27);
+            this.pnlAtualizarInfo.Name = "pnlAtualizarInfo";
+            this.pnlAtualizarInfo.Size = new System.Drawing.Size(577, 359);
+            this.pnlAtualizarInfo.TabIndex = 8;
+            // 
             // Atualizar_Informações
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textNumeroAtualizar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textNomeAtualizar);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.textAtualizar);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pnlAtualizarInfo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Atualizar_Informações";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Atualizar_Informações";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Atualizar_Informações_FormClosed);
+            this.Load += new System.EventHandler(this.Atualizar_Informações_Load);
+            this.pnlAtualizarInfo.ResumeLayout(false);
+            this.pnlAtualizarInfo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -144,5 +159,6 @@ namespace PrimeiraAplicação
         private System.Windows.Forms.TextBox textNomeAtualizar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textNumeroAtualizar;
+        private System.Windows.Forms.Panel pnlAtualizarInfo;
     }
 }
