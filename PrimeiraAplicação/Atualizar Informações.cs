@@ -45,7 +45,7 @@ namespace PrimeiraAplicação
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;database=cad_cliente;Uid=xavier;Pwd=xavier123");
+                conexao = new MySqlConnection("Server=127.0.0.1;database=cad_cliente;Uid=xavier;Pwd=xavier123");
                 strSQL = "update cliente set nome = @nome, sobrenome = @sobrenome where id = @id";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@ID", textAtualizar.Text);
