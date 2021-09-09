@@ -19,7 +19,7 @@ namespace PrimeiraAplicação
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
-            var conexao = "Server=192.168.15.5;Database=logins;Uid=xavier;Pwd=xavier123";
+            var conexao = "Server=127.0.0.1;Database=logins;Uid=xavier;Pwd=xavier123";
             var connection = new MySqlConnection(conexao);
             var comand = connection.CreateCommand();
             MySqlCommand query = new MySqlCommand("select count(*) from usuarios where NomeUsuario='" + textBox1.Text + "'and senha='" + textBox2.Text + "'", connection);

@@ -100,7 +100,7 @@ namespace PrimeiraAplicação
             this.MaximizeBox = false;
             this.Name = "Tela_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tela_Principal";
+            this.Text = "Tela Principal";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Tela_Principal_Load);
             this.pnLogin.ResumeLayout(false);

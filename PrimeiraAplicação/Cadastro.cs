@@ -24,7 +24,7 @@ namespace PrimeiraAplicação
         {
             try
             {
-                conexao = new MySqlConnection("Server=192.168.15.5;Database=logins;Uid=xavier;Pwd=xavier123");
+                conexao = new MySqlConnection("Server=127.0.0.1;Database=logins;Uid=xavier;Pwd=xavier123");
                 strSQL = "insert into usuarios(nome, sobrenome, estado, cidade, NomeUsuario, senha) values(@nome, @sobrenome, @estado, @cidade, @NomeUsuario, @senha)";
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.Parameters.AddWithValue("@nome", txtNome.Text);
